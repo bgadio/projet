@@ -15,5 +15,22 @@ class BintaController extends AbstractController
             'controller_name' => 'BintaController',
         ]);
     }
+
+    #[Route('/cv', name: 'cv')]
+    public function cv(): Response
+    {
+        return $this->render('binta/cv.html.twig', [
+            'controller_name' => 'BintaController',
+        ]);
+    }
+    
+    #[Route('/Portfolio', name: 'Portfolio')]
+    public function portfolio(): Response
+    {
+        return $this->render('binta/Portfolio.html.twig', [
+            'controller_name' => 'BintaController',
+        ]);
+     }
+    
 }
     
