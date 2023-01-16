@@ -16,3 +16,4 @@ class BintaController extends AbstractController
         ]);
     }
 }
+    

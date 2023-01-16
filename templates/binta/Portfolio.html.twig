@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Portfolio{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link rel= "stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+        {% block stylesheets %} {% endblock %}
+    </head>
+    <body id="page-top">
+    
+    {% block body %}{% endblock %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-uppercase navbar-shkrink" id="mainNav">
+            <div class="container-fluid">
+                            <a href ="/portfolio"><button type="button" class="btn btn-primary">Portfolio</button> </a>
+                            <a href ="/loisirs"><button type="button" class="btn btn-secondary">Mes Loisirs</button> </a>
+                            <a href ="/"><button type="button" class="btn btn-success">Accueil</button> </a>
+                            <a href ="/cv"><button type="button" class="btn btn-info">Mon Cv</button> </a>
+                            <a href ="/contact"><button type="button" class="btn btn-danger">Me Contactez</button> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <header class="masthead bg-primary text-white text-center">
+            <div class = "container">
+                <p>&nbsp;</p>
+                <img class="rounded-circle img-fluid mb-5 d-block mx-auto" src="/img/photo3.jpg" alt="Ma photo" style="width:50%">
+                <center><h1 class="text-uppercase mb-0">Theo Dufour</h1></center>
+                <hr class="star-light">
+                  -----------⭐---------
+                </hr>
+                <center><h2 class="font-weight-light mb-0">Réseaux et Télécommunication</h2></center>
+            </div>
+        </header>
+    <div class="container">
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <hr class="star-dark mb-2">
+                <center>-----------⭐---------</center>
+                </hr>
+                <div class="row">
+                <!--En tete -->
+                <center><h1 class="my-4">Compétences Réseaux et Télécommunication
+                <small> </small>
+                </h1></center>
+                <!--Créer des outils et applications informatiques pour les R&T-->
+         <div class="card border-info mb-6" style="max-width: 72rem;">
+                    <div class="col-12">
+                        <a data-toggle="collapse" href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing">
+                            <center><h3 class"panel-title text-white">Compétences : Créer des outils et applications informatiques pour les R & T</h3></center>
+                        </a>
+                    </div>
+                <div class="row w-100 panel border border-dark">
+                <div class="col-3">
+                    <a data-toggle="collapse" href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing">
+                    <a data-toggle="collapse" href="#collapse2" class aria-expanded="false">
+                    <img class="img-fluid rounded-bottom mt-3 mb-3 mb-md-0 top-buffer" src="/img/2.jpg " alt="Image du projet">
+                     <!--Image trouver sur https://pixabay.com/fr/photos/code-html-numérique-codage-1076536/-->
+                    </a>
+                </div>
+                <div class="col-9">
+                    <p></p>
+                    <p>Je connais l'architecture et les thecnologies d'un site web (langage et outils : HTML , CSS , CMS , JS, Responsive , W3C)
+                        Notamment en réalisant le blog sur le théme de Tesla ma permis d'apprendre encore plus sur la manière de develloper en HTML 4/4
+                    </p>
+                    <h3>Compétences Développées</h3>
+                    <ul>
+                        <li>
+                        Développer en HTML
+                        </li>
+                        <li>
+                        Développer en CSS
+                        </li>
+                        <li>
+                        Organiser son code pour garantir la lisibilité et la maintenabilité
+                        </li>
+                        <li>
+                        Prendre en main symfony et twig
+                        </li>
+                        <li>
+                        Selectionner les langages de programmation adapté pour lde dévellopement du Portfolio
+                        </li>
+                    </ul>
+                    <p></p>
+                    <p>
+                     <a class="btn btn-danger" href="https://github.com/TheoDfr/monblogr109">Voir le code source</a>
+                     <a class="btn btn-success" href="/projetsr109">Voir le résultat</a>
+                     <a class="btn btn-primary collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="true">Voir le descriptif complet.</a>
+                     <!--Je précise que ce n'est que la page d'accueil de mon blog-->
+                    </p>
+                    <div id="collapse2" class="col-12 panel-collapse collapse show" style>
+                    <p></p>
+                    <h3>
+                        <strong>Mon ressenti</strong>
+                    </h3>
+                    <p>
+                    La création de site ma permis de revoir mes bases et mes compétences en HTML , CSS et j'ai bien aimé pouvoir choisir le théme
+                    sur lequel nous pouvions travailler le faite d'avoir travailler sur Tesla ma beaucoup inspiré pour la création
+                    de mon blog pour la ressource R109 .
+                    </p>
+                    <figure class="easyimage easyimage-full">
+                    <img alt src="/img/r109.png" width="500">
+                    <figcpation></figcpation>
+                    <p>
+                    Mon objectif était de faire un site valider W3C HTML et CSS, responsive (adapté a tout appreil numérique) , contenant des images , des liens hypertextes , etc...
+                    </p>
+                    <p>&nbsp;</p>
+                    <h3> Description du besoin </h3>
+                    <p>
+                    - Être structuré (ensemble de fichiers et dossiers liés entre eux par des liens hypertextes)
+                    <br>
+                    - Avoir minimum deux pages
+                    <br>
+                    - Etre responsive
+                    <br>
+                    - Utiliser du CSS dans un fichier externe
+                    <br>
+                    - Contenir des images
+                    <br>
+                    - Contenir un formulaire
+                    <br>
+                    - Être validé W3c
+                    <br>
+                    - Utiliser la notion de class et id
+                    <br>
+                    - Utiliser au moins une ancre
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+            <!--2 eme Competence -->
+            <!-- SAE 11 -->
+            <div class="card border-light mb-3" style="max-width: 72rem;">
+                <div class="col-12">
+                    <a data-toggle="collapse" href="#collapse3">
+                    <a href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing"><center><h3 class="panel title text-white">Compétences : Administrer un système d'information sécurisé
+                    </h3></center></a>
+                    </a>
+                </div>
+            <div class ="row w-100 panel border border-dark">
+                <div class="col-3">
+                    <a data-toggle="collapse" href="#collapse3">
+                        <img class="img-fluid rounded-bottom mt-3 mb-3 mb-md-0 top-buffer" src="/img/3.jpg" alt="Image du projet">
+                        <!--Image trouver sur https://pixabay.com/fr/photos/cyber-sécurité-l-internet-réseau-4610993/-->
+                        </a>
+                </div>
+            <div class ="col-9">
+                <p></p>
+                <p>
+                Le but en SAE-11 était de suivre la formation mooc proposé par la SecnumAcademie ,
+                il fallait donc faire chaque module et a la fin une petite évaluation pour chaque théme avoir plus de 80%
+                de réussite sinon on avais pas l'attestation. 
+                Pour finir en duo il fallait faire une présentation orale de nos acquis dans cet SAE , notamment sur
+                les diffèrents type d'attaques.
+                </p>
+                <p></p>
+                <h3>Apprentissages critiques </h3>
+                <ul>
+                    <li>
+                        Utiliser les bonnes pratiques et les recommandations de cybersécurité 4/4 
+                    </li>
+                    <li>
+                        Sécuriser les systèmes d’exploitation 4/4 
+                    </li>
+                    <li>
+                        Connaître les différents types d’attaque 4/4 
+                    </li>
+                </ul>
+                <p>
+                    <a class="btn btn-danger" href="https://secnumacademie.gouv.fr">Voir le site</a>
+                    <a class="btn btn-success" href="/img/attestation.png">Voir le résultat</a>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapse3" aria-expanded="true">Voir le descriptif complet.</a>
+                </p>
+            </div>
+        <div id="collapse3" class="col-12 panel-collapse collapse show">
+            <p></p>
+        <p>&nbsp;</p>
+        <figure class="easyimage easyimage-full">
+            <img alt src="/img/anssi.jpg" width="700">
+        <figcpation></figcpation>
+        </figure>
+        <p>&nbsp;</p>
+        <center><h3>
+            <strong>Contexte</strong>
+        </h3></center>
+        <p>
+        Dans un monde ou la cybercrimanilatié est en plein expernsion , la SAE 11 m'as beaucoup fascine car elle était sur la cybersécurité quelque chose que j'adore particulièrement apprendre
+        car c'est un monde en pleine variation .
+        <br>
+        Chaque jour de nouveau virus apparaise et de nouveau moyen de les contrer aussi malgré
+        une avance fulgureuse que on les hackeurs par rapport au <br>anti-virus.
+       
+        </p>
+        <figure class="easyimage easyimage-full">
+            <center><a href="https://docs.google.com/presentation/d/15l5T-wjGG-V9ZEnHpN5deSiFKYdQdiQS/edit?usp=sharing&ouid=115309813118169312032&rtpof=true&sd=true"><img alt src="/img/diapo.png" width="350"> </a></center>
+            <!--Image provenant de mon diaporama réaliser pour la SAE 11/-->
+            <figcaption></figcaption>
+        </figure>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <center><p> 
+        A la fin de cet SAE nous avons utilisé le système d'exploitation Kali Linux basé sur linux.
+        Et nous devions rendre un word avec toute les récentes attaques informatiques ainsi que leur fonctionnement .
+        </p></center>
+        <h3> Compétences Développées</h3>
+
+        <ul>
+            <li>
+            L'implémentation de nouvelle fonctionnalités sur Kali
+            </li> </center>
+            <li>
+            De nouvelle pratique apprises 
+            </li>
+            <li>
+            Acquis de nouvelle connaisance sur les attaques informatiques
+            </li>
+        </ul>
+      
+        <center>
+        <br>
+        <p>
+        Cet SAE ma permit d'en savoir plus sur le monde fascinant de la cybersécurité
+        et de l'informatique.
+        </p>
+        </center>
+    </div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+         <!--3 eme Competence -->
+    <div class="card border-light mb-3" style="max-width: 72rem;">
+            <div class="col-12">
+                <a data-toggle="collapse" href="#collapse4">
+                    <center><a href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing"><h3 class="panel-title text-white">Compétences : Administrer les Réseaux internet </h3></center></A>
+                </a>
+            </div>
+        <div class="row w-100 panel border border-dark">
+            <div class="col-3">
+                <a data-toggle="collapse" href="#collapse4">
+                    <img class="img-fluid rounded-bottom mt-3 mb-3 mb-md-0 top-buffer" src="/img/4.jpg" alt="Image du projet">
+                    <!--Image trouver sur pixbay -->
+                </a>
+            </div>
+        <div class="col-9">
+            <p></p>
+            <p>
+            Le but de cet compétences est de savoir configure les fonction de base d'un réseaux local ainsi que installer un poste client.
+            <br>
+            Niveau d'acquisiton : 2/4
+            </p>
+            <h3>
+                <strong>Compétences Développées</strong>
+            </h3>
+            <p>
+                J'ai redecouvert le système de simulation réseaux avec le logiciel Cisco Packet Tracer
+                Cela ma permit notamment dans la SAE 12 d'avoir comme role de concevoir un nouveau réseau .
+                Ainsi m'as permis de faire de la simulation sur des switchs et d'apprendre de nouvelle commande ,
+                malgré que le réseaux ne soit pas ma tase de thé .
+            </p>
+            <h3>
+                <strong>Apprentissages critiques</strong>
+            </h3>
+            <ul>
+                <li>
+                    Configurer les fonctions de base du réseau local (Ethernet, IPv4, intro IPv6, commutation, VLANs, routage statique)
+                </li>
+                <li>
+                    Savoir identifier les dysfonctionnements du réseau local
+                </li>
+                <li>
+                    Installer un poste client (et le sécuriser: antivirus, parefeu, comptes,...)
+                </li>
+                <li>
+                Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et administration des réseaux et services fournis(DHCP, DNS,...)
+                </li>
+            </ul>
+            <p></p>
+            <p>
+               <a class="btn btn-danger" href="https://docs.google.com/document/d/14i8cnGxYmUT5dxKKLORMLvDvhLWhWW4a/edit?usp=sharing&ouid=115309813118169312032&rtpof=true&sd=true">Voir le Compte Rendu R101c</a>
+               <a class="btn btn-success" href="/img/r101c.jpg">Voir le résultat</a>
+               <a class="btn btn-primary" data-toggle="collapse" href="#collapse4" aria-expanded="true">Voir le descriptif complet.</a>
+            </p>
+        </div>
+        <div id="collapse4" class="col-12 panel-collapse collapse show">
+        <p></p>
+        <h2>
+            <strong>Etape 1 : Installer&nbsp;Windows Server 2016 et une machine client</strong>
+        </h2>
+        <p>
+            Pour cela on utilise le logiciel VirtualBox afin de créer des machines virutelles une qui servira de serveurs et l'autre de client.
+            Le but étant de les faire communiquer entre elle , via l'interface utilasteur du client . 
+            Pour le client on utilisera une machine virtuelle WIN 7 - PRO (R101c)
+        </p>
+        <p>
+            J'ai donc du simuler un faux réseaux d'entreprise en utilisant le DNS ainsi que les IPv4 que jai du attribuer a la machine serveur et client.
+        </p>
+        <p>
+        <ul>
+            <li>Creation de profil pour l'utilisateurs</li>
+            <li>Application du DNS sur Windows Serveur</li>
+            <li>Aplication du DHCP sur Windows Serveur avec le pool d'ip Adresse</li>
+         
+        </ul>
+        <h2>
+            <strong>Etape 2 : Configuration des accès et documentation</strong>
+        </h2>
+        <p>
+            J'ai eu pas mal de soucis car j'ai du recommencer beaucoup de fois le tp r101c
+            a cause de nombreux bluescreen ou d'arret forcer d'une de mes deux machine virutelles
+            supprimant mon travaille effectué lors des séances precedentes.
+            Mon objectif était de créer un dossier partager un l'intérieur du profil utilisateurs sélectionner
+            une sorte de deuxieme disque.
+        </p>
+        <ul>
+            <li>Création d'une arboresence</li>
+            <li>Mise en place de la securite Windows sur les répertoires créer</li>
+            <li>Acces au session utilisateurs a des heures précise</li>
+            <li>Création d'un second disque partager</li>
+            <li>Choisir une stratégie de sécurisation Windows Serveur </li>
+        </ul>
+        <p>
+            Une fois ceci créer le tp était casiment finis , je n'est pas réussi malheureusement
+            la création d'un second disque partager qui se fais uniquement grace a un script en .bat 
+        </p>
+
+        <p> Mais j'ai réussi la premiere partie</p>
+        <p> J'ai bien aimé decouvrir le monde de Windows Serveur que je connaisais pour le coup
+            pas du tout et si jai du temps libre pourquoi pas me documenter la dessus ou en apprendre plus
+            sur les stratégie de sécurisation.
+        </p>
+        <p></p>
+        </div>
+    </div>
+ <!--Bas de page-->
+</section>
+</div> 
+<footer class="footer text-center mb-0">
+    <div class="container mb-0">
+        <div class="row mb-0">
+            <div class="col-md-3 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Téléphone</h4>
+                <p class="lead mb-0">+33 7 82 83 81 96</p>
+            </div>
+        <div class="col-md-5 mb-12 mb-lg-15">
+            <h4 class="text-uppercase mb-4">Adresse</h4>
+            <p class ="lead mb-0">Roanne.</p>
+        </div>
+       <div class="col-md-3 mb-5 mb-lg-4">
+        <h4 class="text-uppercase mb-4">Sur le net</h4>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+                     <span title="C'est mon github clique pour voir mes projets"><a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/TheoDfr"><img class="img-fluid" src ="/img/git.png" width="32rem;"</span></img>
+					  <i class="fas fa-sitemap"></i>
+					</a>
+        </ul>
+    </div>
+<p>&nbsp;</p>
+<div class"col-md-3">
+    <h4 class="text-uppercase mb-4">A propos de ce site</h4>
+    <p class="lead mb-0">
+         Site créer avec
+        <a href="https://symfony.com/4">Symfony</a>, Twig et
+        <a href="https://bootswatch.com">Bootswatch</a>
+        .
+        <br>Site créer par Theo Dufour © Copie Interdite !
+    </p>
+</div>
+</div>
+<p>&nbsp;</p>
+</div>
+</footer>
+<div class="scroll-to-top d-lg-none position-fixed" style="display: block;">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron up">
+         ::before
+        </i>
+    </a>
+</div>
+
+
+
+
+
+<!-- By Successful -->
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
