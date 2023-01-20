@@ -1,0 +1,75 @@
+<html>
+    
+    <head>
+        <link rel= "stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    </head>
+    <style>
+        
+    .obt{
+    
+        width:100%;
+        height: 700px;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background:none;
+        color: black;
+        
+        
+        }
+        
+    </style>
+    
+    <body>
+        {%block body%}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BGadio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/binta">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cv">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Formulaire">Formulaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Portfolio">Portfolio</a>
+          </li>
+          
+      </div>
+    </div>
+  </nav>
+
+<div class="obt" >
+    <h1>Obtenir le cv </h1>
+    <p><h3>Veuillez remplir le formulaire ci-dessous pour telecharger le CV . </h3></p>
+    <form action="/page-traitement-donnees" method="post">
+    <div>
+     <label for="Prenom"><h2>Prenom</h2></label>
+    <input type="text" id="Prenom" name="Prenom" placeholder="" required>
+    </div>
+    <div>
+    <label for="nom"><h2>Nom</h2></label>
+    <input type="text" id="nom" name="nom" placeholder="" required>
+    </div>
+    <div>
+    <label for="email"><h2>Adresse mail<h2></label>
+    <input type="email" id="email" name="email" placeholder="" required>
+    </div>
+   
+    <div>
+    <button type="submit">Telecharger le cv </button>
+    </div>
+    </form>
+    </div>
+    {%endblock%}
+</body>
+</html>

@@ -47,5 +47,12 @@ class BintaController extends AbstractController
              'controller_name' => 'BintaController',
          ]);
       }
+      #[Route('/Formulaire', name: 'Formulaire')]
+     public function Formulaire(): Response
+     {
+         return $this->render('binta/Formulaire.html.twig', [
+             'controller_name' => 'BintaController',
+         ]);
+      }
 }
     
