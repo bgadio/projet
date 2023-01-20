@@ -11,10 +11,18 @@ class BintaController extends AbstractController
     #[Route('/binta', name: 'app_binta')]
     public function index(): Response
     {
-        return $this->render('binta/index.html.twig', [
+        return $this->render('binta/acceuil.html.twig', [
             'controller_name' => 'BintaController',
         ]);
     }
+
+    #[Route('/index', name: 'Acceuil')]
+    public function Acceuil(): Response
+    {
+        return $this->render('binta/index.html.twig', [
+            'controller_name' => 'BintaController',
+        ]);
+     }
 
     #[Route('/cv', name: 'cv')]
     public function cv(): Response
@@ -31,6 +39,13 @@ class BintaController extends AbstractController
             'controller_name' => 'BintaController',
         ]);
      }
-    
+
+     #[Route('/binta/loisirs', name: 'loisirs')]
+     public function loisirs(): Response
+     {
+         return $this->render('binta/loisirs.html.twig', [
+             'controller_name' => 'BintaController',
+         ]);
+      }
 }
     

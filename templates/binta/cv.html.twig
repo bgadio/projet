@@ -1,82 +1,102 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>{% block title %}Mon Cv{% endblock %}</title>
-            <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-           
-            <link rel= "stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
-            {% block stylesheets %} {% endblock %}
-        </head>
-    <body>
-    {% block body %}{% endblock %}
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fixed-top">
-                <div class="container-fluid">
-                                <a href ="/portfolio"><button type="button" class="btn btn-primary">Portfolio</button> </a>
-                                <a href ="/loisirs"><button type="button" class="btn btn-secondary">Mes Loisirs</button> </a>
-                                <a href ="/"><button type="button" class="btn btn-success">Accueil</button> </a>
-                                <a href ="/cv"><button type="button" class="btn btn-info">Mon Cv</button> </a>
-                                <a href ="/contact"><button type="button" class="btn btn-danger">Me Contactez</button> </a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <center><img src ="/img/cv.jpg" alt="Image du projet"></center></img>
-            <p>&nbsp;</p>
-    <span title="Telecharge le en format en pdf ici"><center><a href="/pdf/moncv.pdf" download = "moncv.pdf"><button type="button" class="btn btn-outline-success">Telecharger Mon Cv</button></center></span></a>
-    <p>&nbsp;</p>
-    <footer class="footer text-center mb-0">
-        <div class="container mb-0">
-            <div class="row mb-0">
-                <div class="col-md-3 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Téléphone</h4>
-                    <p class="lead mb-0">+33 7 82 83 81 96</p>
-                </div>
-            <div class="col-md-5 mb-12 mb-lg-15">
-                <h4 class="text-uppercase mb-4">Adresse</h4>
-                <p class ="lead mb-0">Roanne.</p>
-            </div>
-           <div class="col-md-3 mb-5 mb-lg-4">
-            <h4 class="text-uppercase mb-4">Sur le net</h4>
-            <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                         <span title="C'est mon github clique pour voir mes projets"><a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/TheoDfr"><img class="img-fluid" src ="/img/git.png" width="32rem;"</span></img>
-                          <i class="fas fa-sitemap"></i>
-                        </a>
-            </ul>
+<html>
+    <head>
+        <link rel= "stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    </head>
+{% block stylesheets %}
+
+<style>
+    
+    .box{
+    
+    width: 75%;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+    padding:25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:none;
+    color: black;
+    
+    }
+    
+</style>
+
+            
+{% endblock %}
+  
+<body>
+    {% block body %}
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BGadio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/binta">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cv">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulaire">Formulaire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Portfolio">Portfolio</a>
+              </li>
+              
+          </div>
         </div>
-    <p>&nbsp;</p>
-    <div class"col-md-3">
-        <h4 class="text-uppercase mb-4">A propos de ce site</h4>
-        <p class="lead mb-0">
-             Site créer avec
-            <a href="https://symfony.com/4">Symfony</a>, Twig et
-            <a href="https://bootswatch.com">Bootswatch</a>
-            .
-            <br>Site créer par Theo Dufour © Copie Interdite !
-        </p>
+      </nav>
+
+    <div class="box" id="cv">
+    
+   <div>
+
+    
+    <h1>GADIO Binta</h1>
+    <h2> Administrateur Réseau </h2>
+    <div class="progress">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+    <p>Adresse:Roanne</p>
+
+    <p>Téléphone: 06-05-70-12-35</p>
+
+    <p>Email: binta.gadio@etu.univ-st-etienne.fr</p>
+    <div class="progress">
+        <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+    <h1>Parcours</h1>
+    <p>2018 Breuvet de Fin d'Etudes Moyen (BFEM) </p>
+    <p>2019-2021 Lycée</p>
+    <p>2021 Baccalauréat S2 avec mention</p>
+
+    <p>Description des responsabilités et réalisations</p>
+
+    <h3>Nom de l'entreprise - Titre du poste</h3>
+
+    <p>Description des responsabilités et réalisations</p>
+
+    <h2>Formation</h2>
+
+    <h3>Nom de l'école - Diplôme</h3>
+
+    <p>Description de la formation</p>
+
+    <h3>Nom de l'école - Diplôme</h3>
+
+    <p>Description de la formation</p>
+   </div>
     </div>
-    </div>
-    <p>&nbsp;</p>
-    </div>
-    </footer>
-    <div class="scroll-to-top d-lg-none position-fixed" style="display: block;">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron up">
-             ::before
-            </i>
-        </a>
-    </div>
-    
-    
-    
-    
-    
-    <!-- By Successful -->
-    </body>
-    
-    </html>
+    {% endblock %}
+
+</body>
+</html>

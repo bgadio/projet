@@ -1,0 +1,22 @@
+
+.sool{
+    background-image: url('https://img.freepik.com/photos-gratuite/gros-plan-image-programmeur-travaillant-son-bureau-dans-bureau_1098-18707.jpg?w=740&t=st=1674138196~exp=1674138796~hmac=688c576d5fc3ffd4a4e162e46c6587c11541c2fce6d549a2edd0c4e456c892c7');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.rf{
+    text-align: center;
+    color:white;
+  
+  }
+.box{
+    border: solid 2px purple;
+    border-radius: 20px;
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+    text-align: center;
+
+}
