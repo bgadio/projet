@@ -1,14 +1,42 @@
-{% extends 'base.html.twig' %}
+
     
       
-    
+    <html>
+        <head>
+            <link rel= "stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+        </head>
+        
+    <body>
     {% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BGadio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/binta">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cv">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Formulaire">Formulaire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Portfolio">Portfolio</a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
         <br>
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-dark text-white text-center">
             <div class = "container">
                 <p>&nbsp;</p>
-                <img class="rounded-circle img-fluid mb-5 d-block mx-auto" src="/img/photo3.jpg" alt="Ma photo" style="width:50%">
-                <center><h1 class="text-uppercase mb-0">Theo Dufour</h1></center>
+                <center><h1 class="text-uppercase mb-0">GADIO Binta</h1></center>
                 <hr class="star-light">
                   -----------⭐---------
                 </hr>
@@ -20,9 +48,10 @@
             <div class="container">
                 <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <hr class="star-dark mb-2">
-                <center>-----------⭐---------</center>
+                <center>
+                    -----------⭐---------</center>
                 </hr>
-                <div class="row">
+                <div class="row" >
                 <!--En tete -->
                 <center><h1 class="my-4">Compétences Réseaux et Télécommunication
                 <small> </small>
@@ -30,24 +59,20 @@
                 <!--Créer des outils et applications informatiques pour les R&T-->
          <div class="card border-info mb-6" style="max-width: 72rem;">
                     <div class="col-12">
-                        <a data-toggle="collapse" href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing">
-                            <center><h3 class"panel-title text-white">Compétences : Créer des outils et applications informatiques pour les R & T</h3></center>
+                     <center><h3 class"panel-title text-white"><strong><font color=purple>Compétences : Créer des outils et applications informatiques pour les R & T</font></strong></h3></center>
                         </a>
                     </div>
                 <div class="row w-100 panel border border-dark">
                 <div class="col-3">
-                    <a data-toggle="collapse" href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing">
                     <a data-toggle="collapse" href="#collapse2" class aria-expanded="false">
-                    <img class="img-fluid rounded-bottom mt-3 mb-3 mb-md-0 top-buffer" src="/img/2.jpg " alt="Image du projet">
-                     <!--Image trouver sur https://pixabay.com/fr/photos/code-html-numérique-codage-1076536/-->
+        
                     </a>
                 </div>
                 <div class="col-9">
                     <p></p>
-                    <p>Je connais l'architecture et les thecnologies d'un site web (langage et outils : HTML , CSS , CMS , JS, Responsive , W3C)
-                        Notamment en réalisant le blog sur le théme de Tesla ma permis d'apprendre encore plus sur la manière de develloper en HTML 4/4
+                    <p>Je connais l'architecture et les thecnologies d'un site web (langage et outils : HTML , CSS ,..)
                     </p>
-                    <h3>Compétences Développées</h3>
+                    <h3><strong>Compétences Développées</strong></h3>
                     <ul>
                         <li>
                         Développer en HTML
@@ -66,12 +91,7 @@
                         </li>
                     </ul>
                     <p></p>
-                    <p>
-                     <a class="btn btn-danger" href="https://github.com/TheoDfr/monblogr109">Voir le code source</a>
-                     <a class="btn btn-success" href="/projetsr109">Voir le résultat</a>
-                     <a class="btn btn-primary collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="true">Voir le descriptif complet.</a>
-                     <!--Je précise que ce n'est que la page d'accueil de mon blog-->
-                    </p>
+                    
                     <div id="collapse2" class="col-12 panel-collapse collapse show" style>
                     <p></p>
                     <h3>
@@ -79,35 +99,20 @@
                     </h3>
                     <p>
                     La création de site ma permis de revoir mes bases et mes compétences en HTML , CSS et j'ai bien aimé pouvoir choisir le théme
-                    sur lequel nous pouvions travailler le faite d'avoir travailler sur Tesla ma beaucoup inspiré pour la création
-                    de mon blog pour la ressource R109 .
-                    </p>
-                    <figure class="easyimage easyimage-full">
-                    <img alt src="/img/r109.png" width="500">
-                    <figcpation></figcpation>
-                    <p>
-                    Mon objectif était de faire un site valider W3C HTML et CSS, responsive (adapté a tout appreil numérique) , contenant des images , des liens hypertextes , etc...
+                    sur lequel nous pouvions travailler .
                     </p>
                     <p>&nbsp;</p>
-                    <h3> Description du besoin </h3>
+                    <h3> <strong>Compétences necéssaires </strong></h3>
                     <p>
-                    - Être structuré (ensemble de fichiers et dossiers liés entre eux par des liens hypertextes)
+                    - Savoir coder en HTML
                     <br>
-                    - Avoir minimum deux pages
-                    <br>
-                    - Etre responsive
+                    - Savoir utiliser SYMFONY et BOOTSTWATCH 
                     <br>
                     - Utiliser du CSS dans un fichier externe
                     <br>
-                    - Contenir des images
+                    - Savoir inserer des images
                     <br>
-                    - Contenir un formulaire
-                    <br>
-                    - Être validé W3c
-                    <br>
-                    - Utiliser la notion de class et id
-                    <br>
-                    - Utiliser au moins une ancre
+                    - Savoir utiliser la notion de class et id
                     </p>
                 </div>
             </div>
@@ -115,107 +120,66 @@
     </div>
      <p>&nbsp;</p>
      <p>&nbsp;</p>
-            <!--2 eme Competence -->
-            <!-- SAE 11 -->
-            <div class="card border-light mb-3" style="max-width: 72rem;">
-                <div class="col-12">
-                    <a data-toggle="collapse" href="#collapse3">
-                    <a href="https://docs.google.com/spreadsheets/d/1o82leD3R3z-PYtqOooJwA8l5WRWC1pro5K0AjU4CdAg/edit?usp=sharing"><center><h3 class="panel title text-white">Compétences : Administrer un système d'information sécurisé
-                    </h3></center></a>
-                    </a>
-                </div>
-            <div class ="row w-100 panel border border-dark">
-                <div class="col-3">
-                    <a data-toggle="collapse" href="#collapse3">
-                        <img class="img-fluid rounded-bottom mt-3 mb-3 mb-md-0 top-buffer" src="/img/3.jpg" alt="Image du projet">
-                        <!--Image trouver sur https://pixabay.com/fr/photos/cyber-sécurité-l-internet-réseau-4610993/-->
-                        </a>
-                </div>
-            <div class ="col-9">
-                <p></p>
+     <div class="col-12">
+            <center><h3 class"panel-title text-white"><strong><font color=purple>Compétences : Administrer les reseaux et l'internet</font></h3>
+    </div>
+    <div class="row w-100 panel border border-dark">
+        <div class="col-3">
+            <a data-toggle="collapse" href="#collapse2" class aria-expanded="false">
+
+            </a>
+        </div>
+    <div class="col-9">
+        <p></p>
+    <h3><strong>Compétences Développées</strong></h3>
+           <ul>
+            <li>
+                Metrre en place et gerer un ou plusieurs LAN sur cisco .
+            </li>
                 <p>
-                Le but en SAE-11 était de suivre la formation mooc proposé par la SecnumAcademie ,
+                    <li>
+               Grace a la SAE-11 dont le but  était de suivre la formation mooc proposé par la SecnumAcademie ,
                 il fallait donc faire chaque module et a la fin une petite évaluation pour chaque théme avoir plus de 80%
                 de réussite sinon on avais pas l'attestation. 
-                Pour finir en duo il fallait faire une présentation orale de nos acquis dans cet SAE , notamment sur
+                Pour finir il fallait faire une présentation orale de nos acquis dans cet SAE , notamment sur
                 les diffèrents type d'attaques.
+                </li
                 </p>
                 <p></p>
-                <h3>Apprentissages critiques </h3>
-                <ul>
-                    <li>
-                        Utiliser les bonnes pratiques et les recommandations de cybersécurité 4/4 
-                    </li>
-                    <li>
-                        Sécuriser les systèmes d’exploitation 4/4 
-                    </li>
-                    <li>
-                        Connaître les différents types d’attaque 4/4 
-                    </li>
-                </ul>
-                <p>
-                    <a class="btn btn-danger" href="https://secnumacademie.gouv.fr">Voir le site</a>
-                    <a class="btn btn-success" href="/img/attestation.png">Voir le résultat</a>
-                    <a class="btn btn-primary" data-toggle="collapse" href="#collapse3" aria-expanded="true">Voir le descriptif complet.</a>
-                </p>
-            </div>
-        <div id="collapse3" class="col-12 panel-collapse collapse show">
-            <p></p>
-        <p>&nbsp;</p>
-        <figure class="easyimage easyimage-full">
-            <img alt src="/img/anssi.jpg" width="700">
-        <figcpation></figcpation>
-        </figure>
-        <p>&nbsp;</p>
-        <center><h3>
-            <strong>Contexte</strong>
-        </h3></center>
-        <p>
-        Dans un monde ou la cybercrimanilatié est en plein expernsion , la SAE 11 m'as beaucoup fascine car elle était sur la cybersécurité quelque chose que j'adore particulièrement apprendre
-        car c'est un monde en pleine variation .
-        <br>
-        Chaque jour de nouveau virus apparaise et de nouveau moyen de les contrer aussi malgré
-        une avance fulgureuse que on les hackeurs par rapport au <br>anti-virus.
-       
-        </p>
-        <figure class="easyimage easyimage-full">
-            <center><a href="https://docs.google.com/presentation/d/15l5T-wjGG-V9ZEnHpN5deSiFKYdQdiQS/edit?usp=sharing&ouid=115309813118169312032&rtpof=true&sd=true"><img alt src="/img/diapo.png" width="350"> </a></center>
-            <!--Image provenant de mon diaporama réaliser pour la SAE 11/-->
-            <figcaption></figcaption>
-        </figure>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <center><p> 
-        A la fin de cet SAE nous avons utilisé le système d'exploitation Kali Linux basé sur linux.
-        Et nous devions rendre un word avec toute les récentes attaques informatiques ainsi que leur fonctionnement .
-        </p></center>
-        <h3> Compétences Développées</h3>
 
-        <ul>
-            <li>
-            L'implémentation de nouvelle fonctionnalités sur Kali
-            </li> </center>
-            <li>
-            De nouvelle pratique apprises 
-            </li>
-            <li>
-            Acquis de nouvelle connaisance sur les attaques informatiques
-            </li>
-        </ul>
-      
-        <center>
-        <br>
-        <p>
-        Cet SAE ma permit d'en savoir plus sur le monde fascinant de la cybersécurité
-        et de l'informatique.
-        </p>
-        </center>
-    </div>
-</div>
-</div>
+            </ul>
+            <h3>
+                <strong>Mon ressenti</strong>
+            </h3>
+                <li>
+                    Les différents TP m'ont permis de me familiariser au monde du reseaux et d'acquérir certains notions d bases .
+                </li>
+                <p>&nbsp;</p>
+                <h3> <strong>Compétences necéssaires </strong></h3>
+                <p>
+                -Savoir mettre en place un réseau au moins sur cisco 
+                <br>
+                -Etre capable de configurer les différents appareils du réseau(PC,Switch,Serveur,...)
+        
+            
+        </figure>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+        
 </div>
 <p>&nbsp;</p>
-         <!--3 eme Competence -->
+<div class="card border-info mb-6" style="max-width: 72rem;">
+    <div class="col-12">
+     <center><h3 class"panel-title text-white"><strong><font color=purple>Compétences : Créer des outils et applications informatiques pour les R & T</font></strong></h3></center>
+        </a>
+    </div>
+<div class="row w-100 panel border border-dark">
+<div class="col-3">
+    <a data-toggle="collapse" href="#collapse2" class aria-expanded="false">
+
+    </a>
+</div>
     <div class="card border-light mb-3" style="max-width: 72rem;">
             <div class="col-12">
                 <a data-toggle="collapse" href="#collapse4">
