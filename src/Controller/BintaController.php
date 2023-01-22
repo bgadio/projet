@@ -54,5 +54,12 @@ class BintaController extends AbstractController
              'controller_name' => 'BintaController',
          ]);
       }
+      #[Route('/binta_cv.pdf', name: 'binta_cv.pdf')]
+      public function binta_cv(): Response
+      {
+          return $this->render('binta/Formulaire.html.twig', [
+              'controller_name' => 'BintaController',
+          ]);
+       }
 }
     
